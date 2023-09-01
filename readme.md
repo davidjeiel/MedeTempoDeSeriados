@@ -1,4 +1,4 @@
-# MedeTempoDeSeriados
+# Mede Tempo De Seriados
 
 Bem-vindo ao repositório **MedeTempoDeSeriados**! Este é um projeto em Java que permite medir quanto tempo você gastou assistindo a seus seriados favoritos. É uma ferramenta simples e divertida para acompanhar suas maratonas de séries.
 
