@@ -1,6 +1,6 @@
 package modelos;
 
-public class Titulo
+public class Titulo implements Comparable<Titulo>
 {
     private String nome;
     private  int anoDeLancamento;
@@ -22,6 +22,10 @@ public class Titulo
         somaAvaliacoes += nota;
         totalDeAvaliacoes++;
         avaliacaoMedia = somaAvaliacoes / totalDeAvaliacoes;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public int getTotalDeAvaliacoes()
@@ -58,5 +62,10 @@ public class Titulo
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
